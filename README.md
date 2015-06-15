@@ -10,6 +10,7 @@ For example, let a.csv and b.csv two files to be merged.
 
 a.csv--------
 Col1,Col2,Col3
+
 a,b,c
 d,e,f
 g,h,i
