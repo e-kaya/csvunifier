@@ -9,25 +9,39 @@ The CSV files can be located anywhere in a given directory hierarchy. In other w
 For example, let a.csv and b.csv two files to be merged.
 
 a.csv--------
+
 Col1,Col2,Col3
 
 a,b,c
+
 d,e,f
+
 g,h,i
 
 b.csv--------
+
 Col2,Col1,Col4
+
 j,k,l
+
 m,n,o
+
 p,q,r
 
 uni.csv------
+
 Col1,Col2,Col3,Col4
+
 a,b,c,,
+
 d,e,f,,
+
 g,h,i,,
+
 k,j,,l
+
 n,m,,o
+
 q,p,,r
 
 Usage:
