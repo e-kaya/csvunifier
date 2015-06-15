@@ -6,9 +6,9 @@ We are not just talking about "merging" two or more CSV files having the same co
 
 The CSV files can be located anywhere in a given directory hierarchy. In other words, given a path to a directory, all the files residing there will be treated as CSV files. (In the next version, CSV files will be automatically identified.)
 
-For example, let a.csv and b.csv two files to be merged.
+For example, let a_1.csv and b_1.csv be two files to be merged. And {"Part","Chapter"} be the leading columns that needs to be added to the beginning of the columns.
 
-a.csv--------
+a_1.csv--------
 
 Col1,Col2,Col3
 
@@ -18,7 +18,7 @@ d,e,f
 
 g,h,i
 
-b.csv--------
+b_2.csv--------
 
 Col2,Col1,Col4
 
@@ -30,18 +30,20 @@ p,q,r
 
 uni.csv------
 
-Col1,Col2,Col3,Col4
+Part,Chapter,Col1,Col2,Col3,Col4
 
-a,b,c,,
+a,1,a,b,c,,
 
-d,e,f,,
+a,1,d,e,f,,
 
-g,h,i,,
+a,1,g,h,i,,
 
-k,j,,l
+b,2,k,j,,l
 
-n,m,,o
+b,2,n,m,,o
 
-q,p,,r
+b,2,q,p,,r
 
 Usage:
+
+An example usage is provided in csvunifier/src/CSVUnifierMain.java.
